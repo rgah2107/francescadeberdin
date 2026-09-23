@@ -71,13 +71,13 @@ export function SiteHeader({
   return (
     <header className="border-b border-line bg-paper md:sticky md:top-0 md:z-40">
       <div className="h-1 bg-sky" aria-hidden="true" />
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-3 sm:flex-row sm:items-start sm:justify-between md:px-8">
-        <div>
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-start justify-between gap-x-6 gap-y-3 px-5 py-3 md:px-8">
+        <div className="shrink-0">
           <Link href={`/${locale}`} className="text-ink no-underline">
             <span className="block font-heading text-4xl leading-none">{chrome.wordmark}</span>
             <span className="mt-1 block font-heading text-3xl italic leading-none text-gold">{chrome.series}</span>
           </Link>
-          <nav className="mt-2 hidden flex-wrap items-center gap-x-5 sm:flex" aria-label={chrome.navLabel}>
+          <nav className="mt-2 hidden flex-nowrap items-center gap-x-5 sm:flex" aria-label={chrome.navLabel}>
             {nav.map((item) => (
               <Link
                 key={item.href}
@@ -91,7 +91,7 @@ export function SiteHeader({
           </nav>
         </div>
 
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:pt-1">
+        <div className="ml-auto flex flex-nowrap items-center gap-x-4 sm:pt-1">
           <div className="flex items-center gap-3">
             <nav aria-label={chrome.languageLabel} className="flex items-center gap-3 font-interface text-lg">
               <Link
