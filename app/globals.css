@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --paper: #f4efe4;
+  --paper-raised: #fbf8f1;
+  --ink: #1a2833;
+  --ink-soft: #3c5160;
+  --sky: #62c0f2;
+  --sky-deep: #1a6e96;
+  --teal: #2a8c94;
+  --teal-deep: #145e66;
+  --on-teal: #f8f4ec;
+  --gold: #8c7032;
+  --line: #d5c7ae;
+  --footer-bg: #173044;
+  --footer-ink: #f6f1e6;
+  --footer-muted: #d5cbb8;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #121a22;
+  --paper-raised: #1c2833;
+  --ink: #f3eee4;
+  --ink-soft: #d2c6b2;
+  --sky: #3d86b3;
+  --sky-deep: #9ed8f6;
+  --teal: #3e9aa2;
+  --teal-deep: #8ed8de;
+  --on-teal: #102226;
+  --gold: #e2c27a;
+  --line: #3a4a58;
+  --footer-bg: #0c141c;
+  --footer-ink: #f3eee4;
+  --footer-muted: #c9bba6;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-sky: var(--sky);
+  --color-sky-deep: var(--sky-deep);
+  --color-teal: var(--teal);
+  --color-teal-deep: var(--teal-deep);
+  --color-on-teal: var(--on-teal);
+  --color-gold: var(--gold);
+  --color-line: var(--line);
+  --color-footer: var(--footer-bg);
+  --color-footer-ink: var(--footer-ink);
+  --color-footer-muted: var(--footer-muted);
+  --font-heading: var(--font-cormorant), "Palatino Linotype", Palatino, Georgia, serif;
+  --font-reading: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-interface: var(--font-source-sans), "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--paper);
+}
+
+body {
+  background-color: var(--paper);
+  background-image: radial-gradient(
+    130% 48rem at 50% -10rem,
+    color-mix(in srgb, var(--sky) 22%, var(--paper)),
+    var(--paper) 72%
+  );
+  background-repeat: no-repeat;
+  color: var(--ink);
+  font-family: var(--font-reading);
+  font-size: 1.1875rem;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--sky) 45%, white);
+  color: #1a2833;
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 80;
+  background: var(--teal-deep);
+  color: var(--on-teal);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-interface);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.eyebrow {
+  font-family: var(--font-interface);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+}
+
+.page-title {
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+}
+
+.lead {
+  font-size: 1.3rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.15rem;
+  padding: 0.75rem 1.35rem;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  font-family: var(--font-interface);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+  color: var(--on-teal);
+}
+
+.btn-primary:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+.btn-secondary {
+  background: transparent;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn-secondary:hover {
+  background: color-mix(in srgb, var(--gold) 18%, transparent);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.85;
+  background: transparent;
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+
+/* Custom rules sit outside Tailwind’s layers, so they must win over .btn. */
+@media (width >= 40rem) {
+  .hide-from-sm {
+    display: none;
+  }
+}
+
+.frame {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 0 0 6px var(--paper),
+    0 0 0 7px var(--line);
+}
+
+.nav-link {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.35rem 0;
+  font-family: var(--font-interface);
+  font-size: 1.05rem;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  border-bottom-color: var(--gold);
+}
+
+.prose a {
+  color: var(--teal-deep);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.page-fade {
+  animation: page-fade 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0;
+    translate: 0 0.45rem;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+  .page-fade {
+    animation: none;
+  }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
