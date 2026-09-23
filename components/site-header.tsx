@@ -62,8 +62,7 @@ export function SiteHeader({
     localStorage.setItem(LOCALE_KEY, next);
   }
 
-  function toggleTheme() {
-    const next: Theme = theme === "dark" ? "light" : "dark";
+  function setThemeChoice(next: Theme) {
     setTheme(next);
     applyTheme(next);
   }
@@ -118,14 +117,24 @@ export function SiteHeader({
                 Русский
               </Link>
             </nav>
-            <button
-              type="button"
-              className="btn btn-secondary min-h-11 px-4 py-2"
-              aria-pressed={theme === "dark"}
-              onClick={toggleTheme}
-            >
-              {theme === "dark" ? chrome.themeToLight : chrome.themeToDark}
-            </button>
+            <div className="theme-switch" role="group" aria-label={chrome.themeLabel}>
+              <button
+                type="button"
+                aria-pressed={theme === "light"}
+                aria-label={chrome.themeToLight}
+                onClick={() => setThemeChoice("light")}
+              >
+                <SunIcon />
+              </button>
+              <button
+                type="button"
+                aria-pressed={theme === "dark"}
+                aria-label={chrome.themeToDark}
+                onClick={() => setThemeChoice("dark")}
+              >
+                <MoonIcon />
+              </button>
+            </div>
           </div>
           <Link className="btn btn-primary no-print min-h-11 px-4 py-2" href={buyHref}>
             {chrome.buy}
@@ -156,5 +165,25 @@ export function SiteHeader({
         ) : null}
       </div>
     </header>
+  );
+}
+
+function SunIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+      <circle cx="12" cy="12" r="3.6" />
+      <path d="M12 3.2v1.8M12 19v1.8M3.2 12h1.8M19 12h1.8M5.8 5.8l1.3 1.3M16.9 16.9l1.3 1.3M18.2 5.8l-1.3 1.3M7.1 16.9l-1.3 1.3" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M9.53 1.72a.75.75 0 0 1 .16.82A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.46-.69.75.75 0 0 1 .98.98 10.5 10.5 0 0 1-9.69 6.46c-5.8 0-10.5-4.7-10.5-10.5 0-4.37 2.67-8.11 6.46-9.7a.75.75 0 0 1 .82.17Z"
+      />
+    </svg>
   );
 }

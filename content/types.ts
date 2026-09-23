@@ -28,6 +28,7 @@ export type Dictionary = {
     book: string;
     faq: string;
     buy: string;
+    themeLabel: string;
     themeToDark: string;
     themeToLight: string;
     languageLabel: string;

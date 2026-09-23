@@ -16,6 +16,7 @@ export const en: Dictionary = {
     book: "The Book",
     faq: "Questions",
     buy: "Buy the book",
+    themeLabel: "Theme",
     themeToDark: "Dark theme",
     themeToLight: "Light theme",
     languageLabel: "Language",

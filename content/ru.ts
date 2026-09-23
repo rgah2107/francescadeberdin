@@ -16,6 +16,7 @@ export const ru: Dictionary = {
     book: "Книга",
     faq: "Вопросы",
     buy: "Купить книгу",
+    themeLabel: "Тема",
     themeToDark: "Тёмная тема",
     themeToLight: "Светлая тема",
     languageLabel: "Язык",
