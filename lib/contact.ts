@@ -16,8 +16,8 @@ export type SocialId = (typeof socialIds)[number];
 export const socialLinks: Record<SocialId, string> = {
   youtube: "https://www.youtube.com/@francescaDeBardinofficial",
   facebook: "https://www.facebook.com/FrancescadeBardinAuthor",
-  instagram: "",
-  tiktok: "",
+  instagram: "https://www.instagram.com/francescadebardin/",
+  tiktok: "https://www.tiktok.com/@francesca.de.bard",
 };
 
 export function activeSocialLinks(): { id: SocialId; href: string }[] {
