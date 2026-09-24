@@ -20,6 +20,9 @@ export const socialLinks: Record<SocialId, string> = {
   tiktok: "https://www.tiktok.com/@francesca.de.bard",
 };
 
+/** Inbox for the contact form. Swap CONTACT_TO when Francesca's address is ready. */
+export const contactInbox = process.env.CONTACT_TO?.trim() || "rgah2107@gmail.com";
+
 export function activeSocialLinks(): { id: SocialId; href: string }[] {
   return socialIds.flatMap((id) => {
     const href = socialLinks[id].trim();

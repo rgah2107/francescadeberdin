@@ -4,7 +4,7 @@ import { localePath } from "@/lib/routes";
 import { SocialLinks } from "@/components/social-links";
 import Link from "next/link";
 
-const links: RouteKey[] = ["home", "about", "book", "faq", "buy"];
+const links: RouteKey[] = ["home", "about", "book", "faq", "contact", "buy"];
 
 export function SiteFooter({
   locale,
@@ -20,6 +20,7 @@ export function SiteFooter({
     about: chrome.about,
     book: chrome.book,
     faq: chrome.faq,
+    contact: chrome.contact,
     buy: chrome.buy,
   };
 

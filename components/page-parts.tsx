@@ -77,6 +77,7 @@ const labelsFor = (chrome: Dictionary["chrome"]): Record<RouteKey, string> => ({
   about: chrome.about,
   book: chrome.book,
   faq: chrome.faq,
+  contact: chrome.contact,
   buy: chrome.buy,
 });
 

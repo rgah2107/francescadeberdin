@@ -12,11 +12,12 @@ export const routes = {
   book: "moscow-diary",
   faq: "questions",
   buy: "buy",
+  contact: "contact",
 } as const;
 
 export type RouteKey = keyof typeof routes;
 
-export const navRoutes: RouteKey[] = ["home", "about", "book", "faq"];
+export const navRoutes: RouteKey[] = ["home", "about", "book", "faq", "contact"];
 
 export function localePath(locale: Locale, route: RouteKey): string {
   const slug = routes[route];

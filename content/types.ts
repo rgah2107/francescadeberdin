@@ -28,6 +28,7 @@ export type Dictionary = {
     book: string;
     faq: string;
     buy: string;
+    contact: string;
     themeLabel: string;
     themeToDark: string;
     themeToLight: string;
@@ -99,6 +100,21 @@ export type Dictionary = {
     title: string;
     lead: string;
     items: { id: string; question: string; answer: string }[];
+  };
+  contact: PageMeta & {
+    eyebrow: string;
+    title: string;
+    lead: string;
+    nameLabel: string;
+    emailLabel: string;
+    messageLabel: string;
+    submit: string;
+    sending: string;
+    success: string;
+    error: string;
+    nameInvalid: string;
+    emailInvalid: string;
+    messageInvalid: string;
   };
   buy: PageMeta & {
     eyebrow: string;
