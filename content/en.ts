@@ -28,8 +28,8 @@ export const en: Dictionary = {
       "An American writer in Moscow. This site introduces her. The diary is the book.",
     motto: "Family motto: Faire Face — Meet the Challenge.",
     rights: "Francesca de Bardin. All rights reserved.",
-    isbn: "ISBN 978-5-0064-8702-4",
-    published: "Moscow Diary, published 2024 by Ridero",
+    isbn: "English edition ISBN 979-8340211118",
+    published: "Amazon.com. Russian edition, Ridero, ISBN 978-5-0064-8702-4",
     socialTitle: "Find her",
     social: {
       youtube: "YouTube",
@@ -57,12 +57,12 @@ export const en: Dictionary = {
     crumb: "Home",
     eyebrow: "Moscow Diary",
     title: "Francesca de Bardin",
-    subtitle: "An American living in Moscow",
-    lead: "She has lived in San Francisco, New York, Paris, and a small town in the south of France. She chose Moscow. Moscow Diary is the book she wrote when the country in the headlines and the country on her street would no longer sit in the same sentence.",
+    subtitle: "By An American Living In Moscow",
+    lead: "She has lived in San Francisco, New York, Paris, and a small town in the south of France. With both US and French passports she could live almost anywhere, and she chose Moscow. Moscow Diary is the book she wrote when the Russia described in the headlines and the Russia where she lived were as different as night and day.",
     missionTitle: "A writer with a door to open",
     mission: [
       "Francesca did not set out to explain Russia to the world. She set out to live in it. The book began when she could no longer pretend that the Russia she was reading about, from afar, was the Russia she was walking through.",
-      "What she offers a reader is company, not a lecture: a woman of traditional temper, widely traveled, plain-spoken, who arrived in the capital in the winter of 2022 with almost no Russian and a lifetime of starting over behind her.",
+      "She becomes a companion to the reader, not a lecturer: a woman of traditional temper, widely traveled, plain-spoken, who arrived in the capital in the winter of 2022 with only two Russian friends, speaking almost no Russian. She brought with her a lifetime of new beginnings.",
       "If you have ever suspected that a headline is a poor substitute for a life, she wrote this for you. She will tell you what her days became. She would like you to judge them yourself.",
     ],
     quote: "The first question Russians ask me is: Why are you living here?",
@@ -97,40 +97,40 @@ export const en: Dictionary = {
     timeline: [
       {
         when: "San Francisco",
-        text: "Born to Italian immigrant parents and educated in Catholic schools, in a middle-class house. She calls her values traditional and her nature independent. Long before Moscow she had already gone looking: the great museums, the great places of worship, ancient sites from the Yucatán to Luxor to Machu Picchu. She is an adventurer who also likes a well-set table.",
+        text: "Born to Italian immigrant parents and educated in Catholic schools, in a middle-class home. She calls her values traditional and her nature independent and adventurous. Long before Moscow, she was already a world traveler: the greatest museums, the great places of worship, ancient sites from the Yucatán to Luxor to Machu Picchu. She is an explorer who also likes a well-set table.",
       },
       {
-        when: "New York, 1980–2010",
-        text: "She moved east for marketing and stayed thirty years as an entrepreneur, founding and leading three businesses. She knows American commercial life from the inside, and she watched its public standards change. That watching sits quietly under the later choice. She is not a visitor who drifted into an opinion.",
+        when: "New York City",
+        text: "She moved east for marketing and stayed as an entrepreneur, founding and leading three businesses. She knows American commercial life from the inside. In the 1990s she began to notice the deterioration of standards taking place across all spheres of life. That watching sits quietly under the later choice. She is not a visitor who drifted into an opinion.",
       },
       {
         when: "Paris, and the south of France",
-        text: "In Paris she met Claude de Bardin. Their conservative philosophies agreed, and they divided fifteen years between Paris and New York: food, art, architecture, the slow work of a home. After his death in 2014 she remained in a small southern town of about thirty thousand, beautiful and, in time, too quiet for the cultural life she still wanted.",
+        text: "In Paris she met Claude de Bardin. Their conservative philosophies agreed, and they divided twenty years between Paris and New York: food, art, opera and travel. After his death in 2014 she remained in France, in a small southern town of about thirty thousand, beautiful and, in time, too quiet for the cultural life she still wanted.",
       },
       {
         when: "Moscow, from January 2022",
-        text: "With an American passport and a French one, she could have lived almost anywhere. She chose the Russian capital, arrived on a snowy fifth of January, and began again with two words of the language. Friends wondered if she was brave. She has a short answer for them, and a long one. The long one became Moscow Diary.",
+        text: "With an American passport and a French one, she could have lived almost anywhere. She chose the Russian capital, arrived on a snowy fifth of January, and began again, knowing only two words of the language. Russian friends remarked how brave she was. She has a short answer for them, and a long one. The long one became Moscow Diary.",
       },
     ],
     sections: [
       {
         heading: "Why a reader might trust her",
         paragraphs: [
-          "She has changed countries more than once, and she has done it as an adult with a formed character, not as a student collecting impressions. New York taught her enterprise. France taught her a slower standard of beauty. Moscow asked her to become a beginner again. People between forty and seventy will recognize that particular courage: the decision to start, late, without an audience.",
-          "She is also a writer already. In 2016 she published Fighting Global Tyranny, a book about power as she had come to see it. Moscow Diary is a different book, closer to the hand and the street. The same woman is speaking: direct, unwilling to borrow an opinion, fond of a concrete detail.",
+          "She has changed countries more than once, and she has done it as an adult with a formed character, not as a student collecting impressions. New York taught her enterprise. France enhanced her appreciation of aesthetics and high standards. Moscow asked her to become a beginner again. Mature adults will recognize that particular courage: the decision to start, again, without an audience.",
+          "She was also a writer already. In 2016 she published Fighting Global Tyranny, a book about power as she had come to see it. Moscow Diary is a different book, closer to the hand and the street. The same woman is speaking: direct, unwilling to borrow an opinion, fond of concrete details.",
         ],
       },
       {
         heading: "What she hopes you will feel",
         paragraphs: [
-          "She wrote because kindness had surprised her, and because the portrait of Russia available in the West had stopped matching her days. She wanted a record that could entertain, inform, and move, and that might leave two cultures a little more willing to look at each other.",
-          "In 2023 she was invited to speak in Moscow, as a newcomer, about choosing a country. She spoke in English, with translation, and took questions afterward. The only subject she declined was her age. Everything else, she has said, can bear the light. The diary is that light, held at the level of an ordinary life.",
+          "She wrote the book because the portrait of Russia available in the West was contrary to her daily experience. She wanted a record that could entertain, inform, and move, and that might leave the two cultures a little more willing to look at each other with more objectivity and respect.",
+          "In 2023 she was invited to speak in Moscow, as a newcomer, about choosing a country. She spoke in English, with translation, and took questions afterward. The only question she said was off limits was her age. Everything else, she has said, can bear the light. The diary is that light, held at the level of an ordinary life.",
         ],
       },
       {
-        heading: "The motto she packed",
+        heading: "The motto she follows",
         paragraphs: [
-          "The de Bardin family motto is French: Faire Face. Meet the challenge. She treats it as a working instruction, not a decoration. It is a useful thing to know about her before you open the book. She does not write as a victim of history, or as its judge. She writes as a woman who intends to face what is in front of her, and then tell you, plainly, what she found.",
+          "The de Bardin family motto in French is: Faire Face. Meet the challenge. She treats it as a working instruction, not a decoration. It is a useful thing to know about her before you open the book. She does not write as a victim of history, or as its judge. She writes as a woman who intends to face what is in front of her, and then tell you, plainly, what she found.",
         ],
       },
     ],
@@ -143,20 +143,21 @@ export const en: Dictionary = {
     eyebrow: "The book",
     title: "Moscow Diary",
     lead: "A personal diary of an American woman making a home in the Russian capital. It is for the reader who wants company through a real life — daily Moscow, Russian culture, the table, and the places she loves — rather than another argument conducted from a distance.",
-    edition: "Written in English. Published in 2024 by Ridero. ISBN 978-5-0064-8702-4.",
+    edition:
+      "English edition published by Amazon.com, ISBN 979-8340211118. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4.",
     sections: [
       {
         heading: "What you are invited into",
         paragraphs: [
-          "Francesca is clear about the form, and a reader deserves the same clarity. This is her experience: the challenges, the surprises, the humor, and the people who changed her map of a country. History and practical life appear when she needs them, the way they appear for any resident, in the middle of a day.",
-          "The days themselves, the meals, the manners of a Russian house, and the rooms and parks she would press on a friend belong to the diary. On this site you can meet the woman who wrote them down, and decide whether you want to go in with her.",
+          "Francesca is clear about the form, and a reader deserves the same clarity. This is her experience: the challenges, the surprises, the humor, and the people who changed her experience of the country. History and practical life appear when she needs them, the way they appear for any resident, in the middle of a day.",
+          "The days themselves, the meals, the manners of a Russian house, and the rooms and parks she would share with a friend belong to the diary. On this site you can meet the woman who wrote them down, and decide whether you want to go in with her.",
         ],
       },
       {
         heading: "Why it is worth your evening",
         paragraphs: [
           "Plenty of books will tell you what to think about Russia. Very few are written by an American of long experience — seasoned, unsentimental, still game — who pays her own bills in Moscow and likes the neighbors. She has a conservative temperament and a traveler’s eye. She is not trying to recruit you. She is trying to show you the street.",
-          "Readers who loved a great city once, and then left it, will feel a kinship with her before they agree with her. So will readers who are tired of being hurried. She takes the long way around a question, because the question — what is a life in Russia actually like? — cannot be answered in a headline.",
+          "Readers who loved a great city once, and then left it, will feel a kinship with her before they agree with her. So will readers who are tired of being rushed. She takes the long way around a question, because the question — what is a life in Russia actually like? — cannot be answered in a headline.",
         ],
       },
     ],
@@ -164,7 +165,7 @@ export const en: Dictionary = {
     audience: [
       {
         title: "The skeptical reader",
-        text: "You have noticed that the news and a country are not the same thing. You would like a witness who lives there, and who is willing to be particular.",
+        text: "You have noticed that the news and a country are not the same thing. You would like a witness who lives there, and who is willing to be precise.",
       },
       {
         title: "The reader of lives",
@@ -172,7 +173,7 @@ export const en: Dictionary = {
       },
       {
         title: "The reader who may go",
-        text: "You are curious about Moscow itself: how a foreigner manages, what the culture asks of a guest, where a resident spends her affection. She has walked that path and kept the notes.",
+        text: "You are curious about Moscow itself: how a foreigner manages, what the culture asks of a guest, how residents indulge their passions. She has walked that path and kept the notes.",
       },
       {
         title: "The Russian reader",
@@ -183,23 +184,23 @@ export const en: Dictionary = {
     doors: [
       {
         title: "An ordinary week",
-        text: "How a newcomer moves, shops, and finds her feet in a capital of thirteen million. She kept the record. It is the heart of the diary, and it is waiting there.",
+        text: "How a newcomer moves, shops, and finds her feet in a capital of 970 square miles and thirteen million residents. She kept the record. It is the heart of the diary, and its particulars are saved for you.",
       },
       {
         title: "The people",
-        text: "Friends who urged her to come, and strangers whose kindness she had not budgeted for. Their stories are hers to tell, in full, in their place.",
+        text: "Friends who urged her to come, and how the extraordinary kindness of strangers touched her deeply. Their stories are hers to tell, in full, in their place.",
       },
       {
         title: "Culture, up close",
-        text: "She found a society that says “we” where she had been taught to say “I.” How that sounds at a table, on a street, and in a difficulty is why she sat down to write.",
+        text: "She found a society that says “we” where she had been taught to say “I.” How that “we” sounds at a table, and on the street. How “we” permeates all of life was the mystery she decided to explore.",
       },
       {
         title: "The table",
-        text: "She has cared about food since Paris: markets, home cooking, a dinner that turns into a friendship. Moscow gave her a new cuisine to love. The particulars are saved for you.",
+        text: "She has always cared about food: markets, home cooking, a dinner that turns into a friendship. Moscow gave her a new cuisine to love. The particulars are saved for you.",
       },
       {
         title: "The city",
-        text: "Museums, music, gardens, and stations she thinks of as palaces. The list she would give a friend is in the back of the book, written in her own order.",
+        text: "Museums, music, gardens, and metro stations built as palaces. She details a quality of life that is unsurpassed. A Russian historian compiled a list of books about Russia that is listed in the book.",
       },
     ],
     reviewsTitle: "Readers who already have the book",
@@ -260,7 +261,7 @@ export const en: Dictionary = {
         id: "who",
         question: "Who is Francesca de Bardin?",
         answer:
-          "She is an American writer living in Moscow. Born in San Francisco to Italian parents, she spent thirty years as an entrepreneur in New York, then fifteen years between Paris and New York with her husband, Claude de Bardin, and eight years in the south of France after his death. In January 2022 she moved to Moscow. Moscow Diary is her account of that life.",
+          "She is an American writer living in Moscow. Born in San Francisco to Italian parents, she was an entrepreneur in New York, then spent twenty years between Paris and New York with her husband, Claude de Bardin, and remained in the south of France after his death. In January 2022 she moved to Moscow. Moscow Diary is her account of that life.",
       },
       {
         id: "what",
@@ -296,20 +297,20 @@ export const en: Dictionary = {
         id: "russian-edition",
         question: "Is there a Russian edition?",
         answer:
-          "The edition offered here is in English. If a Russian edition is published, it will be announced on the page where the book is sold.",
+          "Yes. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4. The English edition, the one sold here, is on Amazon.com, ISBN 979-8340211118.",
       },
       {
         id: "where",
         question: "Where can I buy Moscow Diary?",
         answer:
-          "It was published by Ridero in 2024. The ISBN is 978-5-0064-8702-4. The English edition is on Amazon.",
+          "The English edition is on Amazon.com, ISBN 979-8340211118. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4.",
       },
     ],
   },
   buy: {
     metaTitle: "Buy Moscow Diary by Francesca de Bardin",
     metaDescription:
-      "Buy Moscow Diary, Francesca de Bardin’s firsthand story of an American living in Moscow. ISBN 978-5-0064-8702-4, published in 2024 by Ridero.",
+      "Buy Moscow Diary, Francesca de Bardin’s firsthand story of an American living in Moscow. English edition, Amazon.com, ISBN 979-8340211118.",
     crumb: "Buy the book",
     eyebrow: "Obtain the book",
     title: "Buy Moscow Diary",
@@ -317,12 +318,11 @@ export const en: Dictionary = {
     detailsTitle: "The edition",
     details: [
       { label: "Title", value: "Moscow Diary" },
-      { label: "Subtitle", value: "An American living in Moscow" },
+      { label: "Subtitle", value: "By An American Living In Moscow" },
       { label: "Author", value: "Francesca de Bardin" },
-      { label: "Language", value: "English" },
-      { label: "Publisher", value: "Ridero" },
+      { label: "English edition", value: "Amazon.com, ISBN 979-8340211118" },
+      { label: "Russian edition", value: "Ridero, ISBN 978-5-0064-8702-4" },
       { label: "Year", value: "2024" },
-      { label: "ISBN", value: "978-5-0064-8702-4" },
     ],
   },
   contact: {

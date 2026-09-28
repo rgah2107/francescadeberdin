@@ -41,7 +41,7 @@ function book(locale: Locale) {
     "@type": "Book",
     "@id": `${siteUrl}/#moscow-diary`,
     name: "Moscow Diary",
-    alternateName: ["An American Living in Moscow", "Московский дневник"],
+    alternateName: ["By An American Living In Moscow", "Московский дневник"],
     author: { "@id": `${siteUrl}/#francesca-de-bardin` },
     isbn: bookFacts.isbn,
     inLanguage: "en",

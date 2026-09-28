@@ -42,7 +42,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </figure>
 
         <header className="mx-auto mt-12 max-w-3xl text-center">
-          <p className="eyebrow">{page.eyebrow}</p>
+          <p className="font-heading text-5xl font-semibold uppercase tracking-[0.06em] text-ink md:text-6xl">
+            {page.eyebrow}
+          </p>
           <h1 className="page-title mt-3">{page.title}</h1>
           <p className="mt-3 font-heading text-3xl italic text-sky-deep md:text-4xl">
             {page.subtitle}

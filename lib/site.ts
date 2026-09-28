@@ -3,9 +3,11 @@ export const siteUrl = (
 ).replace(/\/$/, "");
 
 export const bookFacts = {
-  isbn: "978-5-0064-8702-4",
+  isbn: "979-8340211118",
   year: "2024",
-  publisher: "Ridero",
+  publisher: "Amazon.com",
+  russianIsbn: "978-5-0064-8702-4",
+  russianPublisher: "Ridero",
   hero: {
     src: "/images/francesca-de-bardin-hero.png",
     width: 2172,
