@@ -79,8 +79,8 @@ export function rootMetadata(locale: Locale): Metadata {
     ...buildMetadata(locale, "home", dict.home.metaTitle, dict.home.metaDescription),
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
         { url: "/favicon.png", sizes: "192x192", type: "image/png" },
+        { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
       ],
       apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
