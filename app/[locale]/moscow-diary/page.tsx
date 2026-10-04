@@ -36,48 +36,6 @@ export default async function BookPage({
           <p className="mt-6 text-center font-interface text-lg text-ink-soft">{page.edition}</p>
         </div>
 
-        <div className="mx-auto mt-14 max-w-3xl space-y-12">
-          {page.sections.map((section) => (
-            <section key={section.heading}>
-              <h2 className="font-heading text-4xl">{section.heading}</h2>
-              <div className="mt-4 space-y-4 text-ink-soft">
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-
-        <section className="mt-16">
-          <h2 className="text-center font-heading text-4xl md:text-5xl">{page.audienceTitle}</h2>
-          <ul className="mt-8 grid gap-6 md:grid-cols-2">
-            {page.audience.map((item) => (
-              <li key={item.title} className="border border-line bg-paper-raised px-6 py-7">
-                <h3 className="font-heading text-3xl">{item.title}</h3>
-                <p className="mt-3 text-ink-soft">{item.text}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mx-auto mt-16 max-w-3xl">
-          <h2 className="font-heading text-4xl md:text-5xl">{page.doorsTitle}</h2>
-          <ol className="mt-8 space-y-8">
-            {page.doors.map((door, index) => (
-              <li key={door.title} className="grid grid-cols-[auto_1fr] gap-5">
-                <span className="font-heading text-4xl text-gold" aria-hidden="true">
-                  {index + 1}
-                </span>
-                <div>
-                  <h3 className="font-heading text-3xl">{door.title}</h3>
-                  <p className="mt-2 text-ink-soft">{door.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
-
         <ReaderReviews locale={locale} page={page} />
 
         <Continue

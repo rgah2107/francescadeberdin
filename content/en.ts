@@ -65,6 +65,47 @@ export const en: Dictionary = {
       "She becomes a companion to the reader, not a lecturer: a woman of traditional temper, widely traveled, plain-spoken, who arrived in the capital in the winter of 2022 with only two Russian friends, speaking almost no Russian. She brought with her a lifetime of new beginnings.",
       "If you have ever suspected that a headline is a poor substitute for a life, she wrote this for you. She will tell you what her days became. She would like you to judge them yourself.",
     ],
+    invitation: [
+      "Francesca is clear about the form, and a reader deserves the same clarity. This is her experience: the challenges, the surprises, the humor, and the people who changed her experience of the country. History and practical life appear when she needs them, the way they appear for any resident, in the middle of a day.",
+      "The days themselves, the meals, the manners of a Russian house, and the rooms and parks she would share with a friend belong to the diary. On this site you can meet the woman who wrote them down, and decide whether you want to go in with her.",
+      "Plenty of books will tell you what to think about Russia. Very few are written by an American of long experience — seasoned, unsentimental, still game — who pays her own bills in Moscow and likes the neighbors. She has a conservative temperament and a traveler’s eye. She is not trying to recruit you. She is trying to show you the street.",
+      "Readers who loved a great city once, and then left it, will feel a kinship with her before they agree with her. So will readers who are tired of being rushed. She takes the long way around a question, because the question — what is a life in Russia actually like? — cannot be answered in a headline.",
+    ],
+    readers: [
+      {
+        title: "The skeptical reader",
+        text: "You have noticed that the news and a country are not the same thing. You would like a witness who lives there, and who is willing to be precise.",
+      },
+      {
+        title: "The reader of lives",
+        text: "You like memoir when it has kitchens, errands, friendships, and a person you can imagine sitting beside. You do not need a thesis first.",
+      },
+      {
+        title: "The reader who may go",
+        text: "You are curious about Moscow itself: how a foreigner manages, what the culture asks of a guest, how residents indulge their passions. She has walked that path and kept the notes.",
+      },
+    ],
+    doorsTitle: "Doors she leaves closed, until the book",
+    doorsIntro:
+      "How a newcomer moves, shops, and finds her feet in a capital of 970 square miles and thirteen million residents. She kept the record. It is the heart of the diary, and its particulars are saved for you.",
+    doors: [
+      {
+        title: "The people",
+        text: "Friends who urged her to come, and how the extraordinary kindness of strangers touched her deeply. Their stories are hers to tell, in full, in their place.",
+      },
+      {
+        title: "Culture, up close",
+        text: "She found a society that says “we” where she had been taught to say “I.” How that “we” sounds at a table, and on the street. How “we” permeates all of life was the mystery she decided to explore.",
+      },
+      {
+        title: "The table",
+        text: "She has always cared about food: markets, home cooking, a dinner that turns into a friendship. Moscow gave her a new cuisine to love. The particulars are saved for you.",
+      },
+      {
+        title: "The city",
+        text: "Museums, music, gardens, and metro stations built as palaces. She details a quality of life that is unsurpassed. A Russian historian compiled a list of books about Russia that is listed in the book.",
+      },
+    ],
     quote: "The first question Russians ask me is: Why are you living here?",
     quoteBy: "Francesca de Bardin. The long answer is the book.",
     hooksTitle: "Three reasons to open it",
@@ -145,64 +186,6 @@ export const en: Dictionary = {
     lead: "A personal diary of an American woman making a home in the Russian capital. It is for the reader who wants company through a real life — daily Moscow, Russian culture, the table, and the places she loves — rather than another argument conducted from a distance.",
     edition:
       "English edition published by Amazon.com, ISBN 979-8340211118. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4.",
-    sections: [
-      {
-        heading: "What you are invited into",
-        paragraphs: [
-          "Francesca is clear about the form, and a reader deserves the same clarity. This is her experience: the challenges, the surprises, the humor, and the people who changed her experience of the country. History and practical life appear when she needs them, the way they appear for any resident, in the middle of a day.",
-          "The days themselves, the meals, the manners of a Russian house, and the rooms and parks she would share with a friend belong to the diary. On this site you can meet the woman who wrote them down, and decide whether you want to go in with her.",
-        ],
-      },
-      {
-        heading: "Why it is worth your evening",
-        paragraphs: [
-          "Plenty of books will tell you what to think about Russia. Very few are written by an American of long experience — seasoned, unsentimental, still game — who pays her own bills in Moscow and likes the neighbors. She has a conservative temperament and a traveler’s eye. She is not trying to recruit you. She is trying to show you the street.",
-          "Readers who loved a great city once, and then left it, will feel a kinship with her before they agree with her. So will readers who are tired of being rushed. She takes the long way around a question, because the question — what is a life in Russia actually like? — cannot be answered in a headline.",
-        ],
-      },
-    ],
-    audienceTitle: "Who will feel at home with it",
-    audience: [
-      {
-        title: "The skeptical reader",
-        text: "You have noticed that the news and a country are not the same thing. You would like a witness who lives there, and who is willing to be precise.",
-      },
-      {
-        title: "The reader of lives",
-        text: "You like memoir when it has kitchens, errands, friendships, and a person you can imagine sitting beside. You do not need a thesis first.",
-      },
-      {
-        title: "The reader who may go",
-        text: "You are curious about Moscow itself: how a foreigner manages, what the culture asks of a guest, how residents indulge their passions. She has walked that path and kept the notes.",
-      },
-      {
-        title: "The Russian reader",
-        text: "You are curious what an American sees when she stays, and why she is glad she did. She wrote with you in mind as well. She would like the looking to go both ways.",
-      },
-    ],
-    doorsTitle: "Doors she leaves closed, until the book",
-    doors: [
-      {
-        title: "An ordinary week",
-        text: "How a newcomer moves, shops, and finds her feet in a capital of 970 square miles and thirteen million residents. She kept the record. It is the heart of the diary, and its particulars are saved for you.",
-      },
-      {
-        title: "The people",
-        text: "Friends who urged her to come, and how the extraordinary kindness of strangers touched her deeply. Their stories are hers to tell, in full, in their place.",
-      },
-      {
-        title: "Culture, up close",
-        text: "She found a society that says “we” where she had been taught to say “I.” How that “we” sounds at a table, and on the street. How “we” permeates all of life was the mystery she decided to explore.",
-      },
-      {
-        title: "The table",
-        text: "She has always cared about food: markets, home cooking, a dinner that turns into a friendship. Moscow gave her a new cuisine to love. The particulars are saved for you.",
-      },
-      {
-        title: "The city",
-        text: "Museums, music, gardens, and metro stations built as palaces. She details a quality of life that is unsurpassed. A Russian historian compiled a list of books about Russia that is listed in the book.",
-      },
-    ],
     reviewsTitle: "Readers who already have the book",
     reviewsNote: "From people who bought the paperback.",
     reviews: [
@@ -251,18 +234,12 @@ export const en: Dictionary = {
   faq: {
     metaTitle: "Questions for Francesca de Bardin about Moscow Diary",
     metaDescription:
-      "Who Francesca de Bardin is, why she moved to Moscow, what Moscow Diary is, which language it is in, and where to buy it.",
+      "What Moscow Diary is, which language it is in, and where to buy it.",
     crumb: "Questions",
     eyebrow: "Questions",
     title: "Before you open the book",
     lead: "A few answers about the author and the diary. The life inside the diary — Russian daily life, culture, food, and the places she loves — she tells there, at the length they deserve.",
     items: [
-      {
-        id: "who",
-        question: "Who is Francesca de Bardin?",
-        answer:
-          "She is an American writer living in Moscow. Born in San Francisco to Italian parents, she was an entrepreneur in New York, then spent twenty years between Paris and New York with her husband, Claude de Bardin, and remained in the south of France after his death. In January 2022 she moved to Moscow. Moscow Diary is her account of that life.",
-      },
       {
         id: "what",
         question: "What is Moscow Diary?",
@@ -279,7 +256,7 @@ export const en: Dictionary = {
         id: "politics",
         question: "Is it a political book?",
         answer:
-          "It is a life, and a life in Moscow cannot step around the way Russia is talked about. She wrote in part because that talk no longer matched her days. You will meet her values. You will also meet taxis, dinners, friendships, and the ordinary week. She trusts you to hold both.",
+          "It is a life, and a life in Moscow cannot step around the way Russia is talked about. She wrote in part because that talk no longer matched her days. You will meet her values. You will also meet taxis, dinners, friendships, and the ordinary week. She trusts the book to stay a record of that life, not a political argument.",
       },
       {
         id: "life-in-russia",
@@ -346,8 +323,8 @@ export const en: Dictionary = {
   },
   related: {
     about: ["book", "buy"],
-    book: ["about", "buy"],
-    faq: ["about", "book"],
+    book: ["faq", "buy"],
+    faq: ["contact", "book"],
     buy: ["book", "about"],
     contact: ["about", "book"],
   },

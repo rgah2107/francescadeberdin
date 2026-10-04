@@ -42,7 +42,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </figure>
 
         <header className="mx-auto mt-12 max-w-3xl text-center">
-          <p className="font-heading text-5xl font-semibold uppercase tracking-[0.06em] text-ink md:text-6xl">
+          <p className="font-heading text-[2.34rem] font-semibold uppercase tracking-[0.06em] text-ink md:text-[2.925rem]">
             {page.eyebrow}
           </p>
           <h1 className="page-title mt-3">{page.title}</h1>
@@ -76,6 +76,34 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </p>
             <footer className="mt-5 text-ink-soft">{page.quoteBy}</footer>
           </blockquote>
+        </section>
+
+        <section className="mx-auto mt-16 max-w-3xl space-y-5 text-ink-soft">
+          {page.invitation.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </section>
+
+        <ul className="mt-16 grid gap-6 md:grid-cols-3">
+          {page.readers.map((reader) => (
+            <li key={reader.title} className="border border-line bg-paper-raised px-6 py-7">
+              <h2 className="font-heading text-3xl">{reader.title}</h2>
+              <p className="mt-3 text-ink-soft">{reader.text}</p>
+            </li>
+          ))}
+        </ul>
+
+        <section className="mx-auto mt-16 max-w-3xl">
+          <h2 className="font-heading text-4xl md:text-5xl">{page.doorsTitle}</h2>
+          <p className="mt-5 text-ink-soft">{page.doorsIntro}</p>
+          <ol className="mt-8 space-y-8">
+            {page.doors.map((door) => (
+              <li key={door.title}>
+                <h3 className="font-heading text-3xl">{door.title}</h3>
+                <p className="mt-2 text-ink-soft">{door.text}</p>
+              </li>
+            ))}
+          </ol>
         </section>
 
         <FeaturedVideo title={page.videoTitle} text={page.videoText} />

@@ -59,6 +59,11 @@ export type Dictionary = {
     lead: string;
     missionTitle: string;
     mission: string[];
+    invitation: string[];
+    readers: { title: string; text: string }[];
+    doorsTitle: string;
+    doorsIntro: string;
+    doors: { title: string; text: string }[];
     quote: string;
     quoteBy: string;
     hooksTitle: string;
@@ -79,11 +84,6 @@ export type Dictionary = {
     title: string;
     lead: string;
     edition: string;
-    sections: Section[];
-    audienceTitle: string;
-    audience: { title: string; text: string }[];
-    doorsTitle: string;
-    doors: { title: string; text: string }[];
     reviewsTitle: string;
     reviewsNote: string;
     reviews: {
