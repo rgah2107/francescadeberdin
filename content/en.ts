@@ -234,17 +234,23 @@ export const en: Dictionary = {
   faq: {
     metaTitle: "Questions for Francesca de Bardin about Moscow Diary",
     metaDescription:
-      "What Moscow Diary is, which language it is in, and where to buy it.",
+      "Who Francesca de Bardin is, what Moscow Diary is, and where to buy the English and Russian editions.",
     crumb: "Questions",
     eyebrow: "Questions",
     title: "Before you open the book",
     lead: "A few answers about the author and the diary. The life inside the diary — Russian daily life, culture, food, and the places she loves — she tells there, at the length they deserve.",
     items: [
       {
+        id: "who",
+        question: "Who is Francesca de Bardin?",
+        answer:
+          "She is an American writer living in Moscow. Born in San Francisco to Italian parents, she spent decades as an entrepreneur in New York City, then twenty years between Paris and New York with her husband, Claude de Bardin, and eight years in the south of France after his death. In January 2022 she moved to Moscow. Moscow Diary is her account of that life.",
+      },
+      {
         id: "what",
         question: "What is Moscow Diary?",
         answer:
-          "It is a personal diary, written in English and published in 2024, about an American making a home in the Russian capital. She shares the challenges and the surprises, with history, humor, and her own sense of what is worth seeing. It is the book she wishes had existed when all she had was the Western description of Russia.",
+          "It is a personal memoir, written in English and published in 2024, about an American making a home in the Russian capital. She shares the challenges and the surprises, with history, humor, and her own sense of what is worth knowing and seeing. It is the book she wishes had existed when all she had was the Western description of Russia.",
       },
       {
         id: "why-read",
@@ -256,31 +262,24 @@ export const en: Dictionary = {
         id: "politics",
         question: "Is it a political book?",
         answer:
-          "It is a life, and a life in Moscow cannot step around the way Russia is talked about. She wrote in part because that talk no longer matched her days. You will meet her values. You will also meet taxis, dinners, friendships, and the ordinary week. She trusts the book to stay a record of that life, not a political argument.",
+          "It is a life, and a life in Moscow cannot ignore the way Russia is talked about in the West. She wrote it, in part, because she saw the anti-Russian rhetoric as a deliberate strategy to be debated. You will meet her values. You will also meet taxis, dinners, friendships, and the ordinary week.",
       },
       {
         id: "life-in-russia",
         question: "What is it like to live in Russia?",
         answer:
-          "That is the question the book exists to answer, and she refuses to hand it to a slogan. She found a welcome, and a daily city, that did not resemble the portrait she had been given in the West. How safe the streets felt, what the culture asked of her, what she ate, and where she sends a visitor: those pages are the reason to read her, not to stop here.",
-      },
-      {
-        id: "need-to-know",
-        question: "Do I need to know Russia, or Russian, already?",
-        answer:
-          "No. The book is in English. Francesca arrived knowing how to say yes and no. A good part of the pleasure is watching a capable woman become a beginner, and watching the city meet her. Russian readers can read this website in Russian; the diary itself is her English.",
+          "That is the question the book exists to answer, and she refuses to deliver it as a slogan. She found a welcome, vibrant, abundant city, that did not resemble the portrait in the West. How safe the streets felt, what the culture asked of her, what she ate, and where she sends a visitor: those pages are the reason to read her, not to stop here.",
       },
       {
         id: "russian-edition",
         question: "Is there a Russian edition?",
         answer:
-          "Yes. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4. The English edition, the one sold here, is on Amazon.com, ISBN 979-8340211118.",
+          "The edition offered here is in English. The book was translated into Russian and published by Ridero in 2024. The Russian version of this website has links to the Russian version of Moscow Diary.",
       },
       {
         id: "where",
         question: "Where can I buy Moscow Diary?",
-        answer:
-          "The English edition is on Amazon.com, ISBN 979-8340211118. The Russian edition is published by Ridero, ISBN 978-5-0064-8702-4.",
+        answer: "The English version is available on Amazon.com worldwide.",
       },
     ],
   },
