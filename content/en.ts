@@ -15,12 +15,12 @@ export const en: Dictionary = {
     about: "The Author",
     book: "The Book",
     faq: "Questions",
+    discover: "Discover",
     buy: "Buy the book",
     contact: "Contact",
     themeLabel: "Theme",
     themeToDark: "Dark theme",
     themeToLight: "Light theme",
-    languageLabel: "Language",
     navLabel: "Primary",
   },
   footer: {
@@ -274,7 +274,7 @@ export const en: Dictionary = {
         id: "russian-edition",
         question: "Is there a Russian edition?",
         answer:
-          "The edition offered here is in English. The book was translated into Russian and published by Ridero in 2024. The Russian version of this website has links to the Russian version of Moscow Diary.",
+          "The edition offered here is in English, on Amazon.com. The book was translated into Russian and published by Ridero in 2024.",
       },
       {
         id: "where",
@@ -301,6 +301,90 @@ export const en: Dictionary = {
       { label: "Year", value: "2024" },
     ],
   },
+  discover: {
+    metaTitle: "Discover places Francesca de Bardin has visited",
+    metaDescription:
+      "The State Tretyakov Gallery in Moscow, as Francesca de Bardin has seen it: the building, the collection, and where to look before you go.",
+    crumb: "Discover",
+    eyebrow: "Discover",
+    title: "Places she has visited",
+    lead: "Rooms, streets, and collections Francesca has walked through, and what she wants you to notice before you go yourself.",
+    places: [
+      {
+        title: "The State Tretyakov Gallery",
+        city: "Moscow",
+        paragraphs: [
+          "Known as the world’s premier repository of Russian fine art, housing a legendary collection of over 180,000 works spanning eleven centuries of national creative history. Founded in 1856 by merchant Pavel Tretyakov, who gifted his private collection to the city in 1892, the museum is globally renowned for its definitive collection of Russian masterpieces—ranging from pre-Mongol religious icons to the bold strokes of the early 20th-century avant-garde.",
+          "The Tretyakov management structure looks after multiple other sites, the most important of these being a second major gallery in Moscow and two remote satellite galleries.",
+          "The New Tretyakov Gallery presents a permanent exhibition of Russian art of the 20th century in all its diversity: avant-garde, socialistic realism and art of the “austere style” and “underground”—from 1910 to the 1990s.",
+          "Branches of the Tretyakov are based in Kaliningrad and Vladivostok.",
+          "The following website, in English, introduces you to hundreds of paintings, by genre, until you have the chance to visit them yourself.",
+        ],
+        link: {
+          href: "https://my.tretyakov.ru/app/gallery/?utm_source=saitgtg&utm_medium=referral&utm_campaign=mainmenu&utm_content=collection%3Flang%3Den",
+          label: "The Tretyakov Gallery collection",
+        },
+        photos: [
+          {
+            src: "/images/discover/tretyakov-facade.jpg",
+            alt: "The entrance of the State Tretyakov Gallery in Moscow, with its painted facade and wooden doors.",
+            caption: "Tretyakov Gallery",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/discover/christ-in-the-desert.jpg",
+            alt: "Ivan Kramskoi’s Christ in the Desert, 1872, hanging on a red wall in the Tretyakov Gallery.",
+            caption: "Christ in the Desert, Ivan Kramskoi, 1872",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/discover/bathing-red-horse.jpg",
+            alt: "Kuzma Petrov-Vodkin’s Bathing the Red Horse, 1912, in the Tretyakov Gallery.",
+            caption: "Bathing the Red Horse, Kuzma Petrov-Vodkin, 1912",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/discover/golden-autumn.jpg",
+            alt: "Francesca de Bardin looking at Isaac Levitan’s Golden Autumn, 1895, in the Tretyakov Gallery.",
+            caption: "Golden Autumn, Isaac Levitan, 1895",
+            width: 768,
+            height: 1024,
+          },
+          {
+            src: "/images/discover/worker-and-collective-farmer.jpg",
+            alt: "Vera Mukhina’s sculpture The Worker and the Collective Farmer, 1937, in the Tretyakov Gallery.",
+            caption: "The Worker and the Collective Farmer, Vera Mukhina, 1937",
+            width: 480,
+            height: 640,
+          },
+          {
+            src: "/images/discover/mashkov-self-portrait.jpg",
+            alt: "Ilya Mashkov’s Self Portrait, 1911, in the Tretyakov Gallery.",
+            caption: "Self Portrait, Ilya Mashkov, 1911",
+            width: 389,
+            height: 518,
+          },
+          {
+            src: "/images/discover/lenin-in-smolny.jpg",
+            alt: "Isaac Brodsky’s Lenin in the Smolny, 1930, in the Tretyakov Gallery.",
+            caption: "Lenin in the Smolny, Isaac Brodsky, 1930",
+            width: 640,
+            height: 480,
+          },
+          {
+            src: "/images/discover/eternal-peace.jpg",
+            alt: "Francesca de Bardin standing beside Isaac Levitan’s At The Eternal Peace, 1894, in the Tretyakov Gallery.",
+            caption: "At The Eternal Peace, Isaac Levitan, 1894",
+            width: 768,
+            height: 1024,
+          },
+        ],
+      },
+    ],
+  },
   contact: {
     metaTitle: "Get in touch with Francesca de Bardin",
     metaDescription:
@@ -323,7 +407,8 @@ export const en: Dictionary = {
   related: {
     about: ["book", "buy"],
     book: ["faq", "buy"],
-    faq: ["contact", "book"],
+    faq: ["discover", "book"],
+    discover: ["contact", "book"],
     buy: ["book", "about"],
     contact: ["about", "book"],
   },

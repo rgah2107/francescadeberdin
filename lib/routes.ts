@@ -1,4 +1,4 @@
-export const locales = ["en", "ru"] as const;
+export const locales = ["en"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -11,13 +11,14 @@ export const routes = {
   about: "about",
   book: "moscow-diary",
   faq: "questions",
+  discover: "discover",
   buy: "buy",
   contact: "contact",
 } as const;
 
 export type RouteKey = keyof typeof routes;
 
-export const navRoutes: RouteKey[] = ["home", "about", "book", "faq", "contact"];
+export const navRoutes: RouteKey[] = ["home", "about", "book", "faq", "discover", "contact"];
 
 export function localePath(locale: Locale, route: RouteKey): string {
   const slug = routes[route];

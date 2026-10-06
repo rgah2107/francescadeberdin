@@ -22,7 +22,7 @@ export function ReaderReviews({
   locale: Locale;
   page: Dictionary["book"];
 }) {
-  const dateFormat = new Intl.DateTimeFormat(locale === "ru" ? "ru" : "en", {
+  const dateFormat = new Intl.DateTimeFormat(locale, {
     dateStyle: "long",
   });
 
@@ -32,10 +32,7 @@ export function ReaderReviews({
       <p className="mx-auto mt-3 max-w-2xl text-center text-ink-soft">{page.reviewsNote}</p>
       <ul className="mt-8 grid gap-6 md:grid-cols-2">
         {page.reviews.map((review) => {
-          const ratingLabel =
-            locale === "ru"
-              ? `${review.rating} из 5`
-              : `${review.rating} out of 5 stars`;
+          const ratingLabel = `${review.rating} out of 5 stars`;
           const when = dateFormat.format(new Date(`${review.date}T00:00:00`));
 
           return (

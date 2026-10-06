@@ -72,7 +72,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </div>
           <blockquote className="frame px-6 py-8 lg:col-span-2">
             <p className="font-heading text-3xl italic leading-snug text-ink">
-              {locale === "ru" ? `«${page.quote}»` : `“${page.quote}”`}
+              {`“${page.quote}”`}
             </p>
             <footer className="mt-5 text-ink-soft">{page.quoteBy}</footer>
           </blockquote>

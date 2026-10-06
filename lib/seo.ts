@@ -12,7 +12,6 @@ export function buildMetadata(
 ): Metadata {
   const path = localePath(locale, route);
   const en = absoluteUrl(localePath("en", route));
-  const ru = absoluteUrl(localePath("ru", route));
 
   return {
     title: { absolute: title },
@@ -21,7 +20,6 @@ export function buildMetadata(
       canonical: path,
       languages: {
         en,
-        ru,
         "x-default": en,
       },
     },
@@ -30,8 +28,7 @@ export function buildMetadata(
       description,
       url: path,
       siteName: "Francesca de Bardin",
-      locale: locale === "en" ? "en_US" : "ru_RU",
-      alternateLocale: locale === "en" ? ["ru_RU"] : ["en_US"],
+      locale: "en_US",
       type: "website",
       images: [
         {

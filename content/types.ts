@@ -27,12 +27,12 @@ export type Dictionary = {
     about: string;
     book: string;
     faq: string;
+    discover: string;
     buy: string;
     contact: string;
     themeLabel: string;
     themeToDark: string;
     themeToLight: string;
-    languageLabel: string;
     navLabel: string;
   };
   footer: {
@@ -100,6 +100,18 @@ export type Dictionary = {
     title: string;
     lead: string;
     items: { id: string; question: string; answer: string }[];
+  };
+  discover: PageMeta & {
+    eyebrow: string;
+    title: string;
+    lead: string;
+    places: {
+      title: string;
+      city: string;
+      paragraphs: string[];
+      link: { href: string; label: string };
+      photos: { src: string; alt: string; caption: string; width: number; height: number }[];
+    }[];
   };
   contact: PageMeta & {
     eyebrow: string;
