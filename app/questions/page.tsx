@@ -1,23 +1,19 @@
 import { JsonLd } from "@/components/json-ld";
 import { Breadcrumb, Continue, CtaBand, PageIntro } from "@/components/page-parts";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/routes";
 import { breadcrumbGraph, faqGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/questions">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
   const page = getDictionary(locale).faq;
   return buildMetadata(locale, "faq", page.metaTitle, page.metaDescription);
 }
 
-export default async function QuestionsPage({
-  params,
-}: PageProps<"/[locale]/questions">) {
-  const locale = await resolveLocale(params);
+export default async function QuestionsPage() {
   const dict = getDictionary(locale);
   const page = dict.faq;
 

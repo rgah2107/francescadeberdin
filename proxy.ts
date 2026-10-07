@@ -1,19 +1,20 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  if (pathname === "/ru" || pathname.startsWith("/ru/")) {
-    const url = request.nextUrl.clone();
-    url.pathname = pathname.replace(/^\/ru/, "/en");
-    return NextResponse.redirect(url, 301);
+function withoutLanguagePrefix(pathname: string): string | null {
+  for (const prefix of ["/en", "/ru"]) {
+    if (pathname === prefix) return "/";
+    if (pathname.startsWith(`${prefix}/`)) return pathname.slice(prefix.length);
   }
+  return null;
+}
 
-  if (pathname === "/en" || pathname.startsWith("/en/")) return;
+export function proxy(request: NextRequest) {
+  const nextPath = withoutLanguagePrefix(request.nextUrl.pathname);
+  if (!nextPath) return;
 
   const url = request.nextUrl.clone();
-  url.pathname = pathname === "/" ? "/en" : `/en${pathname}`;
+  url.pathname = nextPath;
   return NextResponse.redirect(url, 301);
 }
 

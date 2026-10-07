@@ -4,13 +4,12 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { JsonLd } from "@/components/json-ld";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
-import { locales, localePath, navRoutes } from "@/lib/routes";
+import { localePath, navRoutes, type Locale } from "@/lib/routes";
 import { siteGraph } from "@/lib/schema";
 import { rootMetadata } from "@/lib/seo";
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Source_Sans_3, Source_Serif_4 } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 
 const heading = Cormorant_Garamond({
   subsets: ["latin", "cyrillic"],
@@ -35,16 +34,10 @@ const ui = Source_Sans_3({
   display: "swap",
 });
 
-export const dynamicParams = false;
+const locale: Locale = "en";
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
-export async function generateMetadata({
-  params,
-}: LayoutProps<"/[locale]">): Promise<Metadata> {
-  return rootMetadata(await resolveLocale(params));
+export function generateMetadata(): Metadata {
+  return rootMetadata(locale);
 }
 
 export const viewport: Viewport = {
@@ -53,11 +46,7 @@ export const viewport: Viewport = {
   themeColor: "#f4efe4",
 };
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: LayoutProps<"/[locale]">) {
-  const locale = await resolveLocale(params);
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const dict = getDictionary(locale);
   const nav = navRoutes.map((route) => ({
     href: localePath(locale, route),
@@ -76,12 +65,7 @@ export default async function LocaleLayout({
         <a className="skip-link" href="#content">
           {dict.chrome.skip}
         </a>
-        <SiteHeader
-          locale={locale}
-          chrome={dict.chrome}
-          nav={nav}
-          buyHref={localePath(locale, "buy")}
-        />
+        <SiteHeader chrome={dict.chrome} nav={nav} buyHref={localePath(locale, "buy")} />
         <PageFade>{children}</PageFade>
         <SiteFooter locale={locale} chrome={dict.chrome} footer={dict.footer} />
         <JsonLd data={siteGraph(locale)} />

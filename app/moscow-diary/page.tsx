@@ -1,26 +1,22 @@
-import { ContactForm } from "@/components/contact-form";
 import { JsonLd } from "@/components/json-ld";
-import { Breadcrumb, Continue, PageIntro } from "@/components/page-parts";
+import { Breadcrumb, Continue, CtaBand, PageIntro } from "@/components/page-parts";
+import { ReaderReviews } from "@/components/reader-reviews";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/routes";
 import { breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/contact">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
-  const page = getDictionary(locale).contact;
-  return buildMetadata(locale, "contact", page.metaTitle, page.metaDescription);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const page = getDictionary(locale).book;
+  return buildMetadata(locale, "book", page.metaTitle, page.metaDescription);
 }
 
-export default async function ContactPage({
-  params,
-}: PageProps<"/[locale]/contact">) {
-  const locale = await resolveLocale(params);
+export default async function BookPage() {
   const dict = getDictionary(locale);
-  const page = dict.contact;
+  const page = dict.book;
 
   return (
     <main id="content" className="flex-1">
@@ -33,18 +29,20 @@ export default async function ContactPage({
         />
         <div className="mt-8">
           <PageIntro eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+          <p className="mt-6 text-center font-interface text-lg text-ink-soft">{page.edition}</p>
         </div>
-        <div className="mx-auto mt-12 max-w-xl">
-          <ContactForm copy={page} />
-        </div>
+
+        <ReaderReviews locale={locale} page={page} />
+
         <Continue
           locale={locale}
           title={dict.continueLabel}
           chrome={dict.chrome}
-          routes={dict.related.contact}
+          routes={dict.related.book}
         />
+        <CtaBand locale={locale} cta={dict.buyCta} />
       </article>
-      <JsonLd data={breadcrumbGraph(locale, "contact", page.crumb)} />
+      <JsonLd data={breadcrumbGraph(locale, "book", page.crumb)} />
     </main>
   );
 }

@@ -9,7 +9,7 @@ export default function NotFound() {
           The author, and the door into her book, are still on the home page.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link className="btn btn-primary" href="/en">
+          <Link className="btn btn-primary" href="/">
             Return home
           </Link>
         </div>

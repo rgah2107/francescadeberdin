@@ -1,24 +1,20 @@
 import { JsonLd } from "@/components/json-ld";
 import { Breadcrumb, Continue, CtaBand, PageIntro } from "@/components/page-parts";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/routes";
 import { breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Image from "next/image";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/discover">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
   const page = getDictionary(locale).discover;
   return buildMetadata(locale, "discover", page.metaTitle, page.metaDescription);
 }
 
-export default async function DiscoverPage({
-  params,
-}: PageProps<"/[locale]/discover">) {
-  const locale = await resolveLocale(params);
+export default async function DiscoverPage() {
   const dict = getDictionary(locale);
   const page = dict.discover;
 

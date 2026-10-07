@@ -3,8 +3,7 @@ import { JsonLd } from "@/components/json-ld";
 import { Ornament } from "@/components/ornament";
 import { CtaBand } from "@/components/page-parts";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
-import { localePath } from "@/lib/routes";
+import { localePath, type Locale } from "@/lib/routes";
 import { featuredVideo } from "@/lib/contact";
 import { bookFacts, siteUrl } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
@@ -12,16 +11,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
   const page = getDictionary(locale).home;
   return buildMetadata(locale, "home", page.metaTitle, page.metaDescription);
 }
 
-export default async function HomePage({ params }: PageProps<"/[locale]">) {
-  const locale = await resolveLocale(params);
+export default async function HomePage() {
   const dict = getDictionary(locale);
   const page = dict.home;
 

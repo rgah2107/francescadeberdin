@@ -2,23 +2,19 @@ import { JsonLd } from "@/components/json-ld";
 import { Breadcrumb, Continue, CtaBand, PageIntro } from "@/components/page-parts";
 import { SocialLinks } from "@/components/social-links";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/routes";
 import { breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/about">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
   const page = getDictionary(locale).about;
   return buildMetadata(locale, "about", page.metaTitle, page.metaDescription);
 }
 
-export default async function AboutPage({
-  params,
-}: PageProps<"/[locale]/about">) {
-  const locale = await resolveLocale(params);
+export default async function AboutPage() {
   const dict = getDictionary(locale);
   const page = dict.about;
 

@@ -1,7 +1,6 @@
 "use client";
 
 import type { Dictionary } from "@/content/types";
-import type { Locale } from "@/lib/routes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -21,12 +20,10 @@ function applyTheme(theme: Theme) {
 }
 
 export function SiteHeader({
-  locale,
   chrome,
   nav,
   buyHref,
 }: {
-  locale: Locale;
   chrome: Dictionary["chrome"];
   nav: NavItem[];
   buyHref: string;
@@ -55,7 +52,7 @@ export function SiteHeader({
       <div className="h-1 bg-sky" aria-hidden="true" />
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-start justify-between gap-x-6 gap-y-3 px-5 py-3 md:px-8">
         <div className="shrink-0">
-          <Link href={`/${locale}`} className="text-ink no-underline">
+          <Link href="/" className="text-ink no-underline">
             <span className="block font-heading text-4xl leading-none">{chrome.wordmark}</span>
             <span className="mt-1 block font-heading text-3xl italic leading-none text-gold">{chrome.series}</span>
           </Link>

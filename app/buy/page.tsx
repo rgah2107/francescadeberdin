@@ -2,21 +2,19 @@ import { JsonLd } from "@/components/json-ld";
 import { Breadcrumb, Continue, PageIntro } from "@/components/page-parts";
 import { RetailerButtons } from "@/components/retailer-buttons";
 import { getDictionary } from "@/lib/content";
-import { resolveLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/routes";
 import { breadcrumbGraph } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/buy">): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+const locale: Locale = "en";
+
+export async function generateMetadata(): Promise<Metadata> {
   const page = getDictionary(locale).buy;
   return buildMetadata(locale, "buy", page.metaTitle, page.metaDescription);
 }
 
-export default async function BuyPage({ params }: PageProps<"/[locale]/buy">) {
-  const locale = await resolveLocale(params);
+export default async function BuyPage() {
   const dict = getDictionary(locale);
   const page = dict.buy;
 
